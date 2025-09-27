@@ -1,0 +1,208 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand:wght@400&display=swap");
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme to match warm, friendly design with cream background */
+  --background: #fbf7eb;
+  --foreground: #2d3748;
+  --card: #ffffff;
+  --card-foreground: #2d3748;
+  --popover: #ffffff;
+  --popover-foreground: #2d3748;
+  --primary: #5cdb95;
+  --primary-foreground: #ffffff;
+  --secondary: #f7fafc;
+  --secondary-foreground: #2d3748;
+  --muted: #edf2f7;
+  --muted-foreground: #718096;
+  --accent: #ffd93d;
+  --accent-foreground: #2d3748;
+  --destructive: #e53e3e;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #ffffff;
+  --ring: #5cdb95;
+  --chart-1: #5cdb95;
+  --chart-2: #ffd93d;
+  --chart-3: #ff6b6b;
+  --chart-4: #4ecdc4;
+  --chart-5: #45b7d1;
+  --radius: 0.625rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #2d3748;
+  --sidebar-primary: #5cdb95;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f7fafc;
+  --sidebar-accent-foreground: #2d3748;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #5cdb95;
+}
+
+.dark {
+  --background: #1a202c;
+  --foreground: #f7fafc;
+  --card: #2d3748;
+  --card-foreground: #f7fafc;
+  --popover: #2d3748;
+  --popover-foreground: #f7fafc;
+  --primary: #5cdb95;
+  --primary-foreground: #1a202c;
+  --secondary: #4a5568;
+  --secondary-foreground: #f7fafc;
+  --muted: #4a5568;
+  --muted-foreground: #a0aec0;
+  --accent: #ffd93d;
+  --accent-foreground: #1a202c;
+  --destructive: #e53e3e;
+  --destructive-foreground: #f7fafc;
+  --border: #4a5568;
+  --input: #4a5568;
+  --ring: #5cdb95;
+  --chart-1: #5cdb95;
+  --chart-2: #ffd93d;
+  --chart-3: #ff6b6b;
+  --chart-4: #4ecdc4;
+  --chart-5: #45b7d1;
+  --sidebar: #2d3748;
+  --sidebar-foreground: #f7fafc;
+  --sidebar-primary: #5cdb95;
+  --sidebar-primary-foreground: #1a202c;
+  --sidebar-accent: #4a5568;
+  --sidebar-accent-foreground: #f7fafc;
+  --sidebar-border: #4a5568;
+  --sidebar-ring: #5cdb95;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* Added Gochi Hand font family */
+  --font-gochi: "Gochi Hand", cursive;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom button styles matching user requirements */
+.mood-button {
+  width: 150px;
+  padding: 0;
+  border: none;
+  transform: rotate(5deg);
+  transform-origin: center;
+  font-family: "Gochi Hand", cursive;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #494a4b;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #5cdb95;
+}
+
+.mood-button span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #494a4b;
+}
+
+.mood-button:active {
+  transform: translateY(5px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+.mood-button:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Added smaller button variant for send button */
+.mood-button-small {
+  padding: 0;
+  border: none;
+  transform: rotate(3deg);
+  transform-origin: center;
+  font-family: "Gochi Hand", cursive;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 #494a4b;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #5cdb95;
+  width: auto;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mood-button-small:active {
+  transform: translateY(2px) rotate(3deg);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+.mood-button-small:hover {
+  transform: rotate(3deg) scale(1.05);
+}
+
+.mood-button-small:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Added Gochi Hand font utility class */
+.font-gochi {
+  font-family: "Gochi Hand", cursive;
+}
