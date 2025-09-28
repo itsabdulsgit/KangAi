@@ -1,30 +1,37 @@
-# UI design preferences
+# KangAi
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/rifathossen9477849-9774s-projects/v0-ui-design-preferences)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/GRWyv4HloEh)
+![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+KangAi is a platform for managing and customizing UI design preferences. The project is continuously updated to stay in sync with deployed versions, ensuring your UI is always up to date with the latest improvements.
 
-## Deployment
+## Live Demo
 
-Your project is live at:
+Experience KangAi live at:
+**[kangai.fun](https://kangai.fun)**
 
-**[https://vercel.com/rifathossen9477849-9774s-projects/v0-ui-design-preferences](https://vercel.com/rifathossen9477849-9774s-projects/v0-ui-design-preferences)**
+## Features
 
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/projects/GRWyv4HloEh](https://v0.app/chat/projects/GRWyv4HloEh)**
+- Seamless updates between your deployed app and this repository.
+- Easily manage UI preferences and keep your design system consistent.
+- Automatic deployment with Vercel for effortless version management.
 
 ## How It Works
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+1. Make changes to your UI preferences through the platform.
+2. Deploy your updates via the web interface.
+3. The latest changes are pushed automatically to this repository.
+4. Vercel deploys the new version, keeping your app always up to date.
+
+## Contributing
+
+We welcome contributions! Please open an issue or submit a pull request for suggestions and improvements.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+_This repository is automatically kept in sync with the deployed version of KangAi._
